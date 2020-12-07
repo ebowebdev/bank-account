@@ -1,3 +1,6 @@
+# you can see the app here : 
+# https://ebowebdev.github.io/bank-account/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
