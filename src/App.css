@@ -1,38 +1,111 @@
-.App {
+body {
+  background-color: #29aa;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  box-sizing: border-box;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 0;
+  padding: 0;
+}
+.App {
+  width: 70vw;
+  margin-top: 5vh;
+  border: 2px solid;
+  background-color: #eea29a;
+  border-radius: 10px;
+}
+.header {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  font-weight: 500;
+}
+.header-box {
+  display: flex;
+}
+.box {
+  flex-grow: 1;
+  margin-top: 0.5rem;
+}
+
+.activity {
+  margin: 0.5rem;
+  background-color: #aaa;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.activity,
+.activity-box {
+  display: flex;
+  align-items: center;
+}
+.activity-box {
+  flex-grow: 1;
+}
+.activity-box > p {
+  flex-grow: 1;
+}
+.activity > button {
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: red;
+  visibility: hidden;
+}
+.activity:hover button {
+  visibility: visible;
+}
+.activity-box > span {
+  padding: 1rem;
+}
+
+.add-spend {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.add-spend > button {
+  padding: 0.5rem;
+  font-size: medium;
+  font-weight: 500;
+  border-style: none;
+  border-radius: 5px;
+  background-color: #034f84;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.inputs {
+  margin: 0.5rem;
+  padding: 1rem;
+  background-color: #aaa;
+  border-radius: 5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.input-box > label {
+  font-style: oblique;
+  font-weight: 500;
+}
+.input-box > input {
+  border: none;
+  border-radius: 5px;
+  height: 20px;
+  padding: 0px;
+}
+.inputs > form {
+  padding: 0.5rem;
+}
+.inputs > form > button {
+  width: 50%;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: medium;
+  font-weight: bold;
+}
+button {
+  cursor: pointer;
 }
